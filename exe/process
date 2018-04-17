@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require "topobook"
+
 # Takes a PDF file as input, then processes it into SVG for
 # processing into smaller, more usable SVG images for manipulation
 
@@ -15,7 +17,7 @@ puts "Converting PDF to SVG"
 puts `pdf2svg #{pdf_file} #{svg_file}`
 
 puts "Extracting embedded images"
-puts `bin/extract #{svg_file} #{export_dir}/images #{svg_noimg_file}`
+Topobook::ExtractSvgImages.new(svg_file, svg_noimg_file, File.join(export_dir, "images")).extract
 
 puts "Making optimized master SVG #{optimized_svg}"
 puts `svgo -i #{svg_noimg_file} -o #{optimized_svg}`
