@@ -4,3 +4,4 @@
 *.sublime-*
 *.svg
 .DS_Store
+bin/
