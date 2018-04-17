@@ -1,5 +1,6 @@
-.DS_Store
-*.pdf
-*.svg
 *.jpg
+*.pdf
 *.png
+*.sublime-*
+*.svg
+.DS_Store
