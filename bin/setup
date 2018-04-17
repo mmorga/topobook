@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+brew install pdf2svg
+
+npm i -g svgo
+
+bundle install
