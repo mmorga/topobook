@@ -6,8 +6,8 @@
 pdf_file = ARGV[0]
 export_dir = File.basename(pdf_file, ".pdf")
 svg_file = File.join(export_dir, "#{File.basename(pdf_file, ".pdf")}.svg")
-svg_noimg_file = File.join(File.dirname(svg_file), "#{File.basename(svg_file, ".svg")}-noimg.svg")
-optimized_svg = File.join("#{File.basename(svg_noimg_file, ".svg")}-opt.svg")
+svg_noimg_file = File.join(export_dir, "#{File.basename(svg_file, ".svg")}-noimg.svg")
+optimized_svg = File.join(export_dir, "#{File.basename(svg_noimg_file, ".svg")}-opt.svg")
 
 Dir.mkdir(export_dir) unless Dir.exist?(export_dir)
 
@@ -18,4 +18,4 @@ puts "Extracting embedded images"
 puts `bin/extract #{svg_file} #{export_dir}/images #{svg_noimg_file}`
 
 puts "Making optimized master SVG #{optimized_svg}"
-puts `svgo -i #{svg_noimg_file} -o #{optimized_svg} --enable=removeRasterImages`
+puts `svgo -i #{svg_noimg_file} -o #{optimized_svg}`

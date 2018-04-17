@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-brew install pdf2svg
+brew install pdf2svg pandoc imagemagick
+
+brew cask install kindlegen kindle-previewer
 
 npm i -g svgo
 
