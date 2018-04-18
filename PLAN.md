@@ -14,8 +14,6 @@
 
 # Book building Notes
 
-Aside: What fonts are needed in the SVG?
-
 # Files to generate:
 
 * content.opf

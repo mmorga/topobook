@@ -16,8 +16,20 @@ Dir.mkdir(export_dir) unless Dir.exist?(export_dir)
 puts "Converting PDF to SVG"
 puts `pdf2svg #{pdf_file} #{svg_file}`
 
-puts "Extracting embedded images"
+puts "\nExtracting embedded images"
 Topobook::ExtractSvgImages.new(svg_file, svg_noimg_file, File.join(export_dir, "images")).extract
 
-puts "Making optimized master SVG #{optimized_svg}"
+puts "\nMaking optimized master SVG #{optimized_svg}"
 puts `svgo -i #{svg_noimg_file} -o #{optimized_svg}`
+
+puts <<~TODO
+  TODO:
+
+  1. Create create cover and back cover images
+  2. Generate content.opf
+  3. Generate toc.ncx
+  4. Create Disclaimer page (boilerplate)
+  5. Create style.css (boilerplate)
+  6. Generate map TOC page
+  7. Generate map detail pages
+  TODO
