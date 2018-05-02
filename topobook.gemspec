@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.requirements << 'kindlegen, https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211'
   spec.requirements << 'kindle-previewer, https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261'
   spec.requirements << 'node.js and npm'
-  spec.requirements << 'svgo, npm i -g svgo'
+  spec.requirements << 'node dependencies, npm install'
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
@@ -44,4 +44,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry", "~> 0.11"
 
   spec.add_runtime_dependency "nokogiri", "~> 1.8"
+  spec.add_runtime_dependency "pdf-reader", "~> 2.1"
 end

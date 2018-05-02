@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "topobook"
+
+# Takes a PDF file as input, then processes it into SVG for
+# processing into smaller, more usable SVG images for manipulation
+
+pdf_file = ARGV[0]
+export_dir = File.basename(pdf_file, ".pdf")
+
+Topobook::Pdf2Svg.new(pdf_file).to_svg(export_dir)

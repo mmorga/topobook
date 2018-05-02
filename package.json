@@ -1,0 +1,28 @@
+{
+  "name": "topobook",
+  "version": "1.0.0",
+  "description": "Topographic Map Book Generator",
+  "main": "js/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "puppeteer": "^1.3.0",
+    "svgo": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmorga/topobook.git"
+  },
+  "author": "Mark Morga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmorga/topobook/issues"
+  },
+  "homepage": "https://github.com/mmorga/topobook#readme"
+}

@@ -108,7 +108,6 @@ As of the 2018 Kindle Publishing Guidelines, the following tags are valid
 rgb(188,148,109)
 rgb(217,194,171)
 
-
 * rgb(0%,0%,0%)
 * rgb(0%,51.799011%,65.899658%) - TBD not found after previous deletions
 * rgb(100%,0%,0%) - red - stuff on the legend
@@ -129,3 +128,28 @@ rgb(217,194,171)
 * rgb(79.998779%,79.998779%,79.998779%) - gray
 * rgb(81.999207%,81.999207%,81.999207%) - gray
 * rgb(94.099426%,88.198853%,52.89917%) - TBD
+
+
+# Information about PDF::Reader
+
+page.attributes[:LGIDict]
+
+Interesting info about the dictionary
+
+# Fonts referenced in the Mesa de Anguila map:
+
+* "ArialMT"
+* "ESRIDefaultMarker"
+* "ESRINIMAVMAP1&2PT"
+* "ESRIOilGasWater"
+* "ESRIShields"
+* "Georgia"
+    - Normal
+    - Bold
+    - Italic
+* "PLTS6"
+* "TimesNewRomanPSMT"
+* "TrebuchetMS"
+    - Normal
+    - Bold
+    - Italic

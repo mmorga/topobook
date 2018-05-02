@@ -4,4 +4,7 @@
 *.sublime-*
 *.svg
 .DS_Store
-bin/node_modules/
+bin/
+book/
+images/
+node_modules/
