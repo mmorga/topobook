@@ -153,3 +153,30 @@ Interesting info about the dictionary
     - Normal
     - Bold
     - Italic
+# TODO on pdf2sg
+
+## Unhandled callbacks (and frequency)
+
+* set_clipping_path_with_even_odd: 371
+* end_path: 39433
+* set_clipping_path_with_nonzero: 2
+* fill_path_with_even_odd: 483
+* set_line_dash: 139
+* stroke_path: 13041
+* show_text: 835
+* move_text_position: 337
+* append_curved_segment: 157547
+* fill_stroke: 1
+* fill_path_with_nonzero: 21
+* fill_stroke_with_even_odd: 4
+* move_to_start_of_next_line: 2
+* set_nonstroke_color_space: 58
+* set_color_for_nonstroking_and_special: 58
+* set_stroke_color_space: 29
+* set_color_for_stroking_and_special: 29
+* set_character_spacing: 58
+* set_word_spacing: 58
+* set_text_rise: 58
+* set_horizontal_text_scaling: 58
+* set_text_rendering_mode: 58
+
